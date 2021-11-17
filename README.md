@@ -15,3 +15,5 @@ and saves the updated information on a file called 'solarsystemanalysis'.
 then plotted and visualized.
 
 'Report.pdf', a file is a wider description of the code and its purpose.
+
+By defining the initial position, velocity and acceleration of each planet in 'solarsystemtest.py', along with the size of each step and number of iterations for the Euler-Cromer algorithm, one can use 'Analysis.py' to plot and visualise the trajectories of the planets and of other Solar System properties.
