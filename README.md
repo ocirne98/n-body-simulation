@@ -3,13 +3,13 @@ This repository contains the classes for a n-body gravitational simulation (newt
 
 The files contained are the following:
 
-'Particle.py', a file containing the class called 'Particle', where the properties of the planets are defined.
+'Particle.py', a file containing the class called 'Particle', where the properties of the objects of this simulation (the planets) are defined.
 
-'solarsystem.py', a file containing the class called 'solarsystem', where the properties defined in the 
-'Particle' class are calculated.
+'solarsystem.py', a file containing the class called 'solarsystem', where the methods for other properties, like the total momentum or 
+potential energy of the system, are defined.
 
-'solarsystemtest.py', a file containing the initial conditions of the planets and the loop that updates them
-and saves the updated information on a file called 'solarsystemanalysis.npy'.
+'solarsystemtest.py', a file containing the initial conditions of the planets; the loop that updates them
+and saves the updated information on a file called 'solarsystemanalysis.npy' is defined here.
 
 'Analysis.py', a file opens a file called 'solarsystemanalysis.npy' and appends the data in arrays that are 
 then plotted and visualized.
