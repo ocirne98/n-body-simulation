@@ -9,7 +9,7 @@ import copy
 The main aim of this program is plotting and analysing the Data obtained in the 'solarsystemtest' file, to see how the simulation is behaving.
 """
 
-Data = np.load("solarsystemanalysis.npy") # this loads the info saved in the 'solarsystemanalysis' file.
+Data = np.load("solarsystemanalysis.npy", allow_pickle=True) # this loads the info saved in the 'solarsystemanalysis' file.
 
 """
 Arrays that contain the x and y positions to be plotted over time.
@@ -100,7 +100,12 @@ for info in Data:  #loop that appends the data saved in 'Data' for each time ste
     x_P.append(info[0])
 
 
-#Orbits plot
+    
+################################################################################################
+################################################################################################
+################################################################################################
+
+#ORBITS PLOTS
 
 plt.plot(x1,y1,'r.',label='Sun Trajectory')
 
@@ -122,6 +127,13 @@ plt.legend(loc=1)
 plt.show() 
 
 
+
+
+################################################################################################
+################################################################################################
+################################################################################################
+
+#PLOTS OF OTHER PROPERTIES
 
 #Total energy plot (Virial theorem)
 plt.plot(x_E,y_E,'r-', label='Variation of the Total Energy')
