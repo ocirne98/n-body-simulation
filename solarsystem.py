@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 class solarsystem :
 
     """
-    We are creating a new class called 'solarsystem'. Its main aim is to calculate the properties we want to analyze about the bodies in the system.
+    We are creating a new class called 'solarsystem'. Its main aim is to define the properties we want to analyze about the bodies in the system.
     """
 
     
